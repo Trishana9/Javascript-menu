@@ -3,42 +3,56 @@
   <head>
     <title> Javascript Menu</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+       
+    <script>
+      $(document).ready(function(){
+                 $('#icon').click(function(){
+                     $('ul').toggleClass('show');
+                 });
+                 $('#arrow').click(function(){
+                     $('ul').toggleClass('show');
+                 });
 
+             });
+   </script>
+ 
+  </head>
+  
 <body>
-  <nav class="nav-bar">
-    <div class="nav-bar__container container">
-      <div class="nav-contain">
-        <div class="nav-logo">
+ <nav class="">
+   <div class="nav-container ">
+      <div class="logo" id="icon">
+        <img class="icon" id="icon" style="padding-right: 16px" src="images/bar.png">
+        <img src="images/Logo.png">
+      </div>
+      <ul class="nav-links">
+        <div class="logo--pop">
+          <img id="arrow" style="padding-right: 16px" src="images/arrow.png">
           <img src="images/Logo.png">
         </div>
-        <div class="nav-middle">
-          <ul class="nav-menu">
-            <div class="nav-link">
-              <li>
-                <a href="#">For Education</a>
-              </li>
-            </div>
-            <div class="nav-link"> 
-              <li>
-                <a href="#">For Tempates</a>
-              </li>
-            </div>
-            <div class="nav-link">
-              <li>
-                <a href="#">Explore On Sales</a>
-              </li>
-            </div>
-          </ul>
-      </div>
-      </div>
-      <div class="signup-btn">
-        <a href="">Sign Up For Free</a>
-      </div>
+        <div class="hr-line">
+          <hr>
+        </div>
+        <li><a href="">For Education</a></li>
+        <li><a href="">For Templates</a></li>
+        <li><a href="">Explore On Sales</a></li>  
+        <div class="signup-btn--pop">
+          <a href="">Sign Up For Free</a>
+        </div>  
+      </ul>
+   </div>
+    <div class="signup-btn">
+      <a href="">Sign Up For Free</a>
     </div>
-  </nav>
 
 
+ </nav>
+ <section></section>
+
+ <div class="container">
+
+ </div>
 </body>
 
-</html>
+</html> 
