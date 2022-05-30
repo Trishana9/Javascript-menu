@@ -10,10 +10,7 @@
        
     <script>
       $(document).ready(function(){
-                 $('#icon').click(function(){
-                     $('ul').toggleClass('show');
-                 });
-                 $('#arrow').click(function(){
+                 $('.pop').click(function(){
                      $('ul').toggleClass('show');
                  });
 
@@ -38,12 +35,12 @@
  <nav class="fixed h-[10vh] w-screen flex justify-between no-underline">
    <div class="nav-container flex">
       <div class="logo pt-[33px] pr-[50px] pl-[150px] leading-[100px] md:pl-[50px] sm:pr-0 sm:pl-[30px] sm:flex sm:items-center " id="icon">
-        <img class="icon hidden sm:block" id="icon" style="padding-right: 16px" src="images/bar.png">
+        <img class="pop hidden sm:block" id="icon" style="padding-right: 16px" src="images/bar.png">
         <img src="images/Logo.png">
       </div>
       <ul class="nav-links sm:fixed sm:w-[80%] sm:h-screen sm:bg-white sm:-left-full sm:transition-all sm:duration-500 ">
         <div class="logo--pop hidden sm:pt-[33px] sm:pb-[10px] sm:pl-[30px] sm:flex ">
-          <img id="arrow" style="padding-right: 16px" src="images/arrow.png">
+          <img class="pop" style="padding-right: 16px" src="images/arrow.png">
           <img src="images/Logo.png">
         </div>
         <div class="hr-line hidden sm:block sm:text-gray-100 ">
