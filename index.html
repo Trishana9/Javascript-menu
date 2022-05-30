@@ -2,7 +2,10 @@
 <html>
   <head>
     <title> Javascript Menu</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style2.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
        
     <script>
@@ -16,43 +19,50 @@
 
              });
    </script>
+
+   <script>
+    tailwind.config = {
+       theme: {
+
+        screens: {
+          'sm': {'max': '991px'},
+          'md':  {'min': '991px', 'max': '1200px'},
+          },
+     }
+    }
+ </script>
  
   </head>
   
-<body>
- <nav class="">
-   <div class="nav-container ">
-      <div class="logo" id="icon">
-        <img class="icon" id="icon" style="padding-right: 16px" src="images/bar.png">
+<body class="bg-[#FAE8FF]">
+ <nav class="fixed h-[10vh] w-screen flex justify-between no-underline">
+   <div class="nav-container flex">
+      <div class="logo pt-[33px] pr-[50px] pl-[150px] leading-[100px] md:pl-[50px] sm:pr-0 sm:pl-[30px] sm:flex sm:items-center " id="icon">
+        <img class="icon hidden sm:block" id="icon" style="padding-right: 16px" src="images/bar.png">
         <img src="images/Logo.png">
       </div>
-      <ul class="nav-links">
-        <div class="logo--pop">
+      <ul class="nav-links sm:fixed sm:w-[80%] sm:h-screen sm:bg-white sm:-left-full sm:transition-all sm:duration-500 ">
+        <div class="logo--pop hidden sm:pt-[33px] sm:pb-[10px] sm:pl-[30px] sm:flex ">
           <img id="arrow" style="padding-right: 16px" src="images/arrow.png">
           <img src="images/Logo.png">
         </div>
-        <div class="hr-line">
+        <div class="hr-line hidden sm:block sm:text-gray-100 ">
           <hr>
         </div>
-        <li><a href="">For Education</a></li>
-        <li><a href="">For Templates</a></li>
-        <li><a href="">Explore On Sales</a></li>  
-        <div class="signup-btn--pop">
+        <li class="inline-block m-[8px] leading-[100px] text-[16px] font-medium sm:block sm:pl-[30px] sm:my-[40px] sm:leading-[20px] "><a href="">For Education</a></li>
+        <li class="inline-block m-[8px] leading-[100px] text-[16px] font-medium sm:block sm:pl-[30px] sm:my-[40px] sm:leading-[20px]"><a href="">For Templates</a></li>
+        <li class="inline-block m-[8px] leading-[100px] text-[16px] font-medium sm:block sm:pl-[30px] sm:my-[40px] sm:leading-[20px]"><a href="">Explore On Sales</a></li>  
+        <div class="signup-btn--pop hidden sm:block sm:absolute sm:bottom-[5%] sm:left-[30%] sm:bg-black sm:text-white sm:py-[15px] sm:px-[20px] ">
           <a href="">Sign Up For Free</a>
         </div>  
       </ul>
    </div>
-    <div class="signup-btn">
+    <div class="signup-btn flex justify-center items-center rounded-lg bg-black text-white mt-[25px] mr-[150px] h-[50px] w-[200px] md:mr-[50px] sm:hidden">
       <a href="">Sign Up For Free</a>
     </div>
 
 
  </nav>
- <section></section>
-
- <div class="container">
-
- </div>
 </body>
 
 </html> 
