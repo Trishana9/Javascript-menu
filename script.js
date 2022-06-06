@@ -4,19 +4,19 @@ const closeModalButtons = document.querySelector('.pop-in')
 const overlay = document.getElementById('overlay')
 
 openModalButtons.addEventListener('click' ,() =>{
-    nav.classList.add('active')
-    overlay.classList.add('active')
+    nav.classList.remove('sm:-left-full')
+    overlay.classList.remove('hidden')
 })
 
 
 closeModalButtons.addEventListener('click' ,() =>{
-    nav.classList.remove('active')
-    overlay.classList.remove('active')
+    nav.classList.add('sm:-left-full')
+    overlay.classList.add('hidden')
 })
 
 overlay.addEventListener('click' ,() =>{
-    nav.classList.remove('active')
-    overlay.classList.remove('active')
+    nav.classList.add('sm:-left-full')
+    overlay.classList.add('hidden')
 })
 
 
